@@ -1,50 +1,280 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="shop_quanao.SiteMaster" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="shop_quanao.Site" %>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <link href="Css/nivo-style.css" rel="stylesheet" type="text/css" />
+    <link href="Css/nivo-slider.css" rel="stylesheet" type="text/css" />
+    <link href="Css/StyleSheet1.css" rel="stylesheet" type="text/css" />
+    <link href="Css/LogIn.css" rel="stylesheet" type="text/css" />
+    <link href="Css/News.css" rel="stylesheet" type="text/css" />
+    <link href="Css/style.css" rel="stylesheet" type="text/css" />
     <title></title>
-    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
-    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <form runat="server">
-    <div class="page">
-        <div class="header">
-            <div class="title">
-                <h1>
-                    My ASP.NET Application
-                </h1>
-            </div>
-            <div class="loginDisplay">
-                <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
-                    <AnonymousTemplate>
-                        [ <a href="~/Account/Login.aspx" ID="HeadLoginStatus" runat="server">Log In</a> ]
-                    </AnonymousTemplate>
-                    <LoggedInTemplate>
-                        Welcome <span class="bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span>!
-                        [ <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Log Out" LogoutPageUrl="~/"/> ]
-                    </LoggedInTemplate>
-                </asp:LoginView>
-            </div>
-            <div class="clear hideSkiplink">
-                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
-                    <Items>
-                        <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home"/>
-                        <asp:MenuItem NavigateUrl="~/About.aspx" Text="About"/>
-                    </Items>
-                </asp:Menu>
-            </div>
-        </div>
-        <div class="main">
-            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
-        </div>
-        <div class="clear">
+    <form id="form2" runat="server">
+    <div class="Banner1">
+        <div class="TextUniversity1">
+            <a></a>
         </div>
     </div>
-    <div class="footer">
-        
+    <div class="Menu">
+        <div class="Menu2">
+            <div class="TextMenu" style="margin-left: 190px;">
+                <a>Trang chủ</a></div>
+            <div class="TextMenu">
+                <a>Thời trang nam </a>
+            </div>
+            <div class="TextMenu">
+                <a>Thời trang nữ</a></div>
+            <div class="TextMenu">
+                <a>Phụ kiện</a></div>
+            <div class="TextMenu">
+                <a>Sale Off</a></div>
+            <div class="TextMenu">
+                <a>New</a></div>
+            <div class="TextMenu">
+                <a>Hot</a></div>
+        </div>
+    </div>
+    <div style="height: 6px; background-image: url('../Img/3.png');">
+    </div>
+    <div class="BoxCenter">
+        <div style="float: left; width: 790px;">
+            <div id="imagearea">
+                <div id="image" style="width: 754px; height: 315px; top: 0px; left: 0px; margin-top: 40px;">
+                    <a href="javascript:slideShow.nav(-1)" class="imgnav " id="previmg"></a><a href="javascript:slideShow.nav(1)"
+                        class="imgnav " id="nextimg"></a>
+                </div>
+            </div>
+            <div id="thumbwrapper">
+                <div id="thumbarea">
+                    <ul id="thumbs">
+                        <li value="1">
+                            <img src="Img/Full/1.png" width="179" height="100" alt="" /></li>
+                        <li value="2">
+                            <img src="Img/Full/2.png" width="179" height="100" alt="" /></li>
+                        <li value="3">
+                            <img src="Img/Full/3.png" width="179" height="100" alt="" /></li>
+                        <li value="4">
+                            <img src="Img/Full/4.png" width="179" height="100" alt="" /></li>
+                        <li value="5">
+                            <img src="Img/Full/5.png" width="179" height="100" alt="" /></li>
+                        <li value="6">
+                            <img src="Img/Full/6.png" width="179" height="100" alt="" /></li>
+                    </ul>
+                </div>
+            </div>
+            <script type="text/javascript">
+                var imgid = 'image';
+                var imgdir = 'Img/Full';
+                var imgext = '.png';
+                var thumbid = 'thumbs';
+                var auto = true;
+                var autodelay = 5;
+            </script>
+            <script type="text/javascript" src="Img/slide.js"></script>
+            <div class="BoxCenter2">
+                <div class="BoxCenterCenter">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+        <div class="RightBox">
+            <div class="DetailRightBox">
+                <div class="TextRightBox">
+                    <a href="">» Thành viên</a>
+                </div>
+                <div class="TextRightBox2">
+                    <a>» Admin</a>
+                </div>
+                <div class="TitelRightBox">
+                    HÀNG MỚI
+                </div>
+                <div class="U">
+                </div>
+                <div class="BoxImgRight" style="height: 130px;">
+                    <div class="ImgRight" style="height: 130px; color: Black;">
+                        <img src="Img/HangMoi.jpg" />
+                    </div>
+                </div>
+                <div class="TitelRightBox">
+                    THỜI TRANG NAM
+                </div>
+                <div class="U">
+                </div>
+                <div class="BoxImgRight">
+                    <div class="ImgRight">
+                        <img src="Img/nam.jpg" />
+                    </div>
+                </div>
+                <div class="Text2RightBox">
+                    TRANG PHỤC
+                </div>
+                <div class="TextRightBox">
+                    <a>» Áo thun</a>
+                </div>
+                <div class="TextRightBox">
+                    <a>» Áo khoác</a>
+                </div>
+                <div class="TextRightBox">
+                    <a>» Quần Jeans</a>
+                </div>
+                <div class="TextRightBox">
+                    <a>» Quần thể thao</a>
+                </div>
+                <div class="TextRightBox">
+                    <a>» Quần tây</a>
+                </div>
+                <br />
+                <div class="Text2RightBox">
+                    GIÀY DÉP
+                </div>
+                <div class="TextRightBox">
+                    <a>» Giày thể thao</a>
+                </div>
+                <div class="TextRightBox">
+                    <a>» Giày lười</a>
+                </div>
+                <div class="TextRightBox">
+                    <a>» Giày da công sơ</a>
+                </div>
+                <br />
+                <div class="TitelRightBox">
+                    THỜI TRANG NỮ
+                </div>
+                <div class="U">
+                </div>
+                <div class="BoxImgRight">
+                    <div class="ImgRight">
+                        <img src="Img/nu.jpg" />
+                    </div>
+                </div>
+                <div class="Text2RightBox">
+                    TRANG PHỤC
+                </div>
+                <div class="TextRightBox">
+                    <a>» Áo Thun</a>
+                </div>
+                <div class="TextRightBox">
+                    <a>» Váy</a>
+                </div>
+                <div class="TextRightBox">
+                    <a>» Quần Jeans</a>
+                </div>
+                <div class="TextRightBox">
+                    <a>» Đầm dạo phố</a>
+                </div>
+                <div class="TextRightBox2">
+                    <a>» Đầm dự tiệc</a>
+                </div>
+                <div class="Text2RightBox">
+                    GIÀY DÉP
+                </div>
+                <div class="TextRightBox">
+                    <a>» Giày cao gót</a>
+                </div>
+                <div class="TextRightBox">
+                    <a>» Giày búp bê</a>
+                </div>
+                <div class="TextRightBox">
+                    <a>» Giày vải</a>
+                </div>
+                <div class="TextRightBox">
+                    <a>» Giày mọi</a>
+                </div>
+                <div class="TextRightBox2">
+                    <a>» Xăng đan</a>
+                </div>
+                <div class="TitelRightBox">
+                    LIÊN HỆ TRỰC TIUYẾN
+                </div>
+                <div class="U">
+                </div>
+                <div style="height: auto; margin-top: 10px;">
+                    <div class="Logo">
+                        <img src="Img/logo.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="BoxLeftCenter">
+            <div class="TitelLeftBoxCenter">
+                SỰ KIỆN
+            </div>
+            <div class="U2">
+            </div>
+            <div class="BoxImgRight">
+                <div class="ImgRight">
+                    <img src="Img/sale.png" />
+                </div>
+            </div>
+            <div style="width: 170px; height: auto; color: White;">
+                <div class="TitelLeftBoxCenter2">
+                    NGÀY
+                </div>
+                <div class="NumberMar">
+                    10/4</div>
+                <div class="DetailEvent">
+                    <div style="margin-left: 9px;">
+                        Giảm giá 50% giày vải</div>
+                    <div class="TimeEvent">
+                        23:30 p.m.</div>
+                    <div style="margin-left: 9px;">
+                        Tặng quà khách hàng đến đầu tiên</div>
+                    <div class="TimeEvent">
+                        8:30 p.m.</div>
+                </div>
+                <div class="TitelLeftBoxCenter2">
+                    NGÀY
+                </div>
+                <div class="NumberMar">
+                    12/4</div>
+                <div class="DetailEvent">
+                    <div style="margin-left: 9px;">
+                        Khuyến mãi mua 2 tặng 1</div>
+                    <div class="TimeEvent">
+                        8:00 p.m.</div>
+                </div>
+                ....
+            </div>
+            <div class="EventCalendar">
+                <div style="height: 14px; margin-bottom: 2px;">
+                    XEM THÊM »
+                </div>
+            </div>
+            <div class="TitelLeftBoxCenter">
+                PHỤ KIỆN
+            </div>
+            <div class="U2">
+            </div>
+            <div class="BoxImgRight">
+                <div class="ImgRight">
+                    <img src="Img/phukien.png" />
+                </div>
+            </div>
+            <div style="width: 170px; height: auto; color: White;">
+                <div class="TextRightBox">
+                    <a>» Phụ kiện nam</a>
+                </div>
+                <div class="TextRightBox">
+                    <a>» Phụ kiện nữ</a>
+                </div>
+            </div>
+            <div class="EventCalendar">
+                <div style="height: 14px; margin-bottom: 2px;">
+                    Chi tiết »
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="BoxBottom">
+        <h3>
+            thông tin liên hệ
+        </h3>
     </div>
     </form>
 </body>
