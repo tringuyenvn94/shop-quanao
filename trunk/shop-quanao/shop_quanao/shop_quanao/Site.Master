@@ -12,6 +12,77 @@
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <style>
+        #navigation
+        {
+            height: 71px;
+            width: 100%;
+            background: url(../Img/tmc_bg.png) 0 0 no-repeat;
+        }
+        /*ĐỊNH NGHĨA THANH MENU*/
+        #navigation ul
+        {
+            float: left;
+            position: relative;
+            width: 100%;
+            list-style: none;
+        }
+        #navigation ul li
+        {
+            float: left;
+        }
+        #navigation ul li a
+        {
+            display: block;
+            padding: 25px 15px;
+            text-decoration: none;
+            font: 14px "Tahoma";
+            color: #fff;
+            text-transform: uppercase;
+        }
+        #navigation ul li:hover > a
+        {
+            color: #faf798;
+        }
+        #navigation ul li + li > a
+        {
+            background: url(../Img/tmc_sep.png) 0 20px no-repeat;
+        }
+        #navigation ul li span
+        {
+            float: left;
+            padding: 15px 0;
+            position: absolute;
+            left: 0;
+            top: 62px;
+            display: none;
+            width: 100%;
+            color: #fff;
+            background: url(../Img/border_nav.png) 0 0 no-repeat;
+        }
+        #navigation ul li span a
+        {
+            display: inline;
+        }
+        /*#navigation ul li:hover span {display:block;}*/
+        #navigation ul li span a:hover
+        {
+            color: #faf798;
+        }
+    </style>
+    <script type="text/javascript" src="Scripts/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#nav li").hover(
+	function () {
+	    $(this).children('ul').hide();
+	    $(this).children('ul').slideDown('fast');
+	},
+	function () {
+	    $('ul', this).slideUp('fast');
+	});
+        });
+    </script>
 </head>
 <body>
     <form id="form2" runat="server">
@@ -20,7 +91,42 @@
             <a></a>
         </div>
     </div>
-    <div class="Menu">
+    <div style="width: 1340px; clear: both; margin: auto;">
+        <div id="navigation">
+            <ul>
+                <li><a href="#">Thời Trang Nam</a> <span style="z-index: 100;">
+                    <asp:HyperLink ID="hplAothunam" runat="server" NavigateUrl="SanPham.aspx?url=nam0">Áo thun</asp:HyperLink>
+                    <asp:HyperLink ID="hplAosominam" runat="server" NavigateUrl="SanPham.aspx?url=nam1">Áo sơ mi</asp:HyperLink>
+                    <asp:HyperLink ID="hplAokhoacnam" runat="server" NavigateUrl="SanPham.aspx?url=nam2">Áo Khoác</asp:HyperLink>
+                    <asp:HyperLink ID="hplQuanjeannam" runat="server" NavigateUrl="SanPham.aspx?url=nam3">Quần Jean</asp:HyperLink>
+                    <asp:HyperLink ID="hplQuankakinam" runat="server" NavigateUrl="SanPham.aspx?url=nam4">Quần Kaki</asp:HyperLink>
+                </span></li>
+                <li><a href="#">Thời Trang Nữ</a> <span style="z-index: 100;">
+                    <asp:HyperLink ID="hplAothunnu" runat="server" NavigateUrl="SanPham.aspx?url=nu0">Áo thun</asp:HyperLink>
+                    <asp:HyperLink ID="hplAosominu" runat="server" NavigateUrl="SanPham.aspx?url=nu1">Áo sơ mi</asp:HyperLink>
+                    <asp:HyperLink ID="hplAokhoacnu" runat="server" NavigateUrl="SanPham.aspx?url=nu2">Áo Khoác</asp:HyperLink>
+                    <asp:HyperLink ID="hplQuanjeannu" runat="server" NavigateUrl="SanPham.aspx?url=nu3">Quần Jean</asp:HyperLink>
+                    <asp:HyperLink ID="hplVaynu" runat="server" NavigateUrl="SanPham.aspx?url=nu5">Váy</asp:HyperLink>
+                </span></li>
+                <li>
+                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="SanPham.aspx?url=pknam">Phụ Kiện Nam</asp:HyperLink>
+                </li>
+                <li>
+                    <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="SanPham.aspx?url=pknu">Phụ Kiện Nữ</asp:HyperLink>
+                </li>
+                <li>
+                    <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="SanPham.aspx?url=saleoff">SaleOff</asp:HyperLink>
+                </li>
+                <li>
+                    <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="SanPham.aspx?url=new">New</asp:HyperLink>
+                </li>
+                <li>
+                    <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="SanPham.aspx?url=hot">Hàng HOT</asp:HyperLink>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <%--<div class="Menu">
         <div class="Menu2">
             <div class="TextMenu" style="margin-left: 190px;">
                 <a>Trang chủ</a></div>
@@ -38,7 +144,7 @@
             <div class="TextMenu">
                 <a>Hot</a></div>
         </div>
-    </div>
+    </div>--%>
     <div style="height: 6px; background-image: url('../Img/3.png');">
     </div>
     <div class="BoxCenter">

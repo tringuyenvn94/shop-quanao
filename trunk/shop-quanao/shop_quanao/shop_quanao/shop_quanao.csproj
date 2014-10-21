@@ -82,6 +82,7 @@
     <Content Include="Img\anh6full.png" />
     <Content Include="Img\banner.png" />
     <Content Include="Img\BannerButtom.png" />
+    <Content Include="Img\border_nav.png" />
     <Content Include="Img\fullsize\1.JPG" />
     <Content Include="Img\fullsize\2.JPG" />
     <Content Include="Img\fullsize\3.jpeg" />
@@ -114,6 +115,9 @@
     <Content Include="Img\thumbs\4.jpg" />
     <Content Include="Img\thumbs\5.jpg" />
     <Content Include="Img\thumbs\6.jpg" />
+    <Content Include="Img\tmc_bg.png" />
+    <Content Include="Img\tmc_sep.png" />
+    <Content Include="Scripts\jquery-1.9.0.min.js" />
     <Content Include="Styles\Site.css" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
@@ -127,6 +131,7 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
+    <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Account\ChangePassword.aspx.cs">
@@ -181,6 +186,13 @@
     </Compile>
     <Compile Include="UserControls\Listsamphamhot.ascx.designer.cs">
       <DependentUpon>Listsamphamhot.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
