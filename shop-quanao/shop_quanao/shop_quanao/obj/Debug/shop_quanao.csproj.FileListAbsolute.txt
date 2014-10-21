@@ -1,0 +1,4 @@
+E:\Do An\Web_quanao\shop-quanao\shop_quanao\shop_quanao\bin\shop_quanao.dll
+E:\Do An\Web_quanao\shop-quanao\shop_quanao\shop_quanao\bin\shop_quanao.pdb
+E:\Do An\Web_quanao\shop-quanao\shop_quanao\shop_quanao\obj\Debug\shop_quanao.dll
+E:\Do An\Web_quanao\shop-quanao\shop_quanao\shop_quanao\obj\Debug\shop_quanao.pdb
