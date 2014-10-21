@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace shop_quanao
+namespace shop_quanao.UserControls
 {
 
 
-    public partial class About
+    public partial class Listsamphamhot
     {
     }
 }
