@@ -1,0 +1,439 @@
+﻿body 
+{
+    font-family:Tahoma;
+    font-size:12px;
+}
+
+.Banner1
+{
+    background-image: url('../Img/banner.png');
+    height:140px;
+    width:100%;    
+}
+
+.TextUniversity1 a
+{
+    margin-left:200px; 
+    font-size:40px;
+    font-family:Times New Roman;
+    color:White;
+    text-decoration:none;
+}
+
+.TextUniversity2 a
+{
+    margin-left:175px; 
+    font-size:30px; 
+    font-family:Times New Roman; 
+    color:White;
+    text-decoration:none;
+}
+
+.Menu
+{
+    background-image: url('../Img/2.png');
+    height:24px;
+}
+
+.Menu2
+{
+    width:1340px; 
+    clear:both; 
+    margin:auto; 
+    text-align:center; 
+}
+
+.TextMenu
+{
+    float:left;
+    width:134px;
+    height:24px;
+    font-size:15px;
+    text-align:center;
+    color:#8A887D;
+    text-decoration:none;
+}
+
+
+.TextMenu a
+{
+    float:left;
+    width:134px;
+    height:24px;
+    font-size:15px;
+    text-align:center;
+    color:#8A887D;
+    text-decoration:none;
+}
+
+.TextMenu a:hover
+{
+    float:left;
+    width:134px;
+    height:24px;
+    font-size:15px;
+    text-align:center;
+    color:#8A887D;
+    border-left:1px solid #8A887D; 
+    text-decoration:none;
+    background-image: url('../Img/5.png');
+}
+
+.BoxCenter
+{
+    color:White;
+    clear:both;
+    text-align:center;
+    margin:auto;
+    width:980px;
+    height:1700px;
+}
+
+.BoxImgBig
+{
+    width:768px; 
+    height:329px; 
+    border:1px solid #E6E4DB; 
+    margin:40px 20px 0px 0px    
+}
+
+.ImgBig
+{
+    margin:7px 0px 0px 0px; 
+    width:754; 
+    height:315;    
+}
+
+.RightBox
+{
+    float:left;
+    margin-top:47px ; 
+    width:auto; 
+    height:auto; 
+}
+
+.DetailRightBox
+{
+    float:right; 
+    width:auto; 
+    height:auto;
+}
+
+.TitelRightBox
+{
+    font-family:Times New Roman; 
+    color:#565347; 
+    font-size:15px; 
+    text-align:left;
+}
+
+.TextDetail
+{
+    margin-top:20px;
+    font-family:Times New Roman; 
+    color:#565347; 
+    font-size:20px; 
+    text-align:center;
+}
+
+.U
+{
+   height:5px; 
+   background-color: #3F3C30; 
+}
+
+.BoxImgRight
+{
+    border:1px solid #E6E4DB; 
+    margin:10px 0 10px 0; 
+    height:59px; 
+    width:170px;    
+}
+
+.ImgRight
+{
+    margin:2px 0 0 3px; 
+    width:164px; 
+    height:55px;
+}
+
+.TextRightBox
+{
+    height:18px; 
+    text-align:left; 
+    color:#565347;
+    text-decoration:none;
+}
+
+.TextRightBox a
+{
+    height:18px; 
+    text-align:left; 
+    color:#565347;
+    text-decoration:none;
+}
+
+
+.TextRightBox a:hover
+{
+    height:18px; 
+    text-align:left; 
+    color:#820000;
+    text-decoration:none;
+}
+
+.TextRightBox2
+{
+    height:38px; 
+    text-align:left; 
+    color:#565347;
+}
+
+.TextRightBox2 a:hover
+{
+    height:38px; 
+    text-align:left; 
+    color:#820000;
+}
+
+.Text2RightBox
+{
+    color:#820000;
+    font-size:11px;
+    text-align:left;
+    height:24px;
+}
+
+.Logo
+{
+    float:left; 
+    width:119px; 
+    height:93px; 
+    margin-top:2px;    
+}
+
+.TitelLeftBoxCenter
+{
+    font-family:Times New Roman; 
+    color:#820000; 
+    font-size:20px; 
+    text-align:left;
+    text-decoration:none;
+}
+
+.BoxCenter2
+{
+    width:768px; 
+    height:700px; 
+    margin-top:10px    
+}
+
+.BoxLeftCenter
+{
+    float:right; 
+    width:182px; 
+    height:auto; 
+    border-right:1px solid #E6E4DB; 
+    margin-top:10px;    
+}
+
+.BoxCenterCenter
+{
+    float:left; 
+    width:773px;
+    height:auto; 
+    margin:10px 0 0 10px;
+}
+
+.U2
+{
+   width:170px;
+   height:5px; 
+   background-color: #820000;
+}
+
+.TitelLeftBoxCenter2
+{
+    font-family:Times New Roman; 
+    color:#820000; 
+    font-size:15px;
+    text-align:left;
+}
+
+.NumberMar
+{
+    float:left; width:50px; 
+    font-size:20px; 
+    color:#565347 ;
+    font-family:Times New Roman;    
+}
+
+.DetailEvent
+{
+    text-align:left ;
+    float:left; 
+    width:109px; 
+    border-left:1px solid #E6E4DB; 
+    color:#565347    
+}
+
+.TimeEvent
+{
+    color:#820000; 
+    margin-bottom:9px;
+    margin-left:9px;
+}
+
+.EventCalendar
+{
+    color:#565347; 
+    border-top:1px solid #E6E4DB; 
+    border-bottom:1px solid #E6E4DB; text-align:right; 
+    margin:10px 0 20px 0;
+}
+
+.U3
+{
+   width:751px;
+   height:5px; 
+   background-color: #820000;
+   margin-bottom:20px;
+}
+
+.BoxImgUniversityNews
+{
+    float:left;
+    width:169px; 
+    height:170px; 
+    margin:0 15px 0px 0px    
+}
+
+.ImgUniversityNews
+{
+    margin:2px;
+    width:166; 
+    height:110;    
+}
+
+.BoxUniversityNews
+{
+    text-align:left;
+    color:White;
+    width:773px;
+    height:auto;
+    margin-top:10px;
+}
+
+.BoxUniversityNews2
+{
+    float:left;
+    width:193px;
+    height:290px;
+}
+.BoxMoreStories
+{
+    margin-left:9px;
+    float:left;
+    width:162px;
+    height:150px;
+    text-align:left;
+}
+
+.BoxTextUniversityNews2 
+{ 
+    color:#565347;
+    text-align:center;
+    margin-top:10px;
+    /*float:left;*/
+    width:190px;
+    height:auto;
+}
+
+.BoxTextUniversityNews2 a
+{ 
+    color:#565347;
+    text-align:left;
+    margin-top:10px;
+    float:left;
+    width:200px;
+    height:auto;
+}
+
+.BoxTextUniversityNews2 a:hover
+{ 
+    color:#820000;
+    text-align:left;
+    margin-top:10px;
+    float:left;
+    width:200px;
+    height:auto;
+}
+
+.TextMoreStories
+{
+    color:#565347;
+    margin-top:10px;
+    text-align:left;  
+}
+
+.TextMoreStories a:hover
+{
+    color:#820000;
+    margin-top:10px;
+    text-align:left; 
+}
+
+.BoxImgAtStanford
+{
+    float:left;
+    width:395px;
+    height:150px;
+    margin-top:10px;    
+}
+
+.TextAtStanford
+{
+    font-size:17px; 
+    color:#565347;
+}
+
+.BoxBottom
+{
+    height:150px;
+    background-image: url('../Img/BannerButtom.png');
+    width:1340px;
+}
+
+.TextTitleNews
+{
+    width:510px; 
+    margin-left:270px ;
+    text-align:left;
+    font-family:Times New Roman; 
+    font-size:30px; 
+    text-align:left; 
+    color:Black;
+    margin-bottom:10px; 
+}
+
+.TextAddNews
+{
+    float:left; 
+    width:260px; 
+    height:24px;
+    font-family:Times New Roman; 
+    font-size:15px; 
+    text-align:right; 
+    color:Black;
+    margin-bottom:5px;
+}
+
+.TextAddNews2
+{
+    color:Black;
+    height:24px;
+    float:right; 
+    width:510px; 
+    text-align:left;
+    margin-bottom:5px;
+}

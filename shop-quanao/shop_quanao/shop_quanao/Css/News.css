@@ -1,0 +1,148 @@
+﻿body 
+{
+    font-family:Tahoma;
+    font-size:12px;
+}
+
+.NewsMenu
+{
+    border-bottom:1px solid #8A887D; 
+    height:30px; 
+    margin-top:10px;
+    text-decoration:none;
+}
+
+.MenuNews a
+{
+    font-family:Times New Roman;
+    text-align:left;
+    float:left;
+    width:180px;
+    height:30px;
+    font-size:15px;
+    color:#820000;
+    text-decoration:none;
+}
+
+.MenuNews a:hover
+{
+    font-family:Times New Roman;
+    float:left;
+    width:180px;
+    height:30px;
+    font-size:15px;
+    color:black;
+    text-decoration:none;
+}
+
+.ImgBigNews
+{
+    float:left; 
+    width:405px; 
+    height:329px; 
+    border:0px;    
+}
+
+.BoxBigNews
+{
+    float:right; 
+    width:363px; 
+    height:329px; 
+    border:0px; 
+    background-color:#605D51;
+}
+
+.TextBigNews1
+{
+    width:343px;
+    height:150px;
+    font-family:Times New Roman;
+    font-size:35px;
+    color:#E9E6DF;
+    text-align:left;
+    margin:10px 0 10px 10px;
+}
+
+.TextBigNews1 a:hover
+{
+    width:343px;
+    height:150px;
+    font-family:Times New Roman;
+    font-size:35px;
+    color:White;
+    text-align:left;
+    margin:10px 0 10px 10px;
+}
+
+.TextBigNews2
+{
+    width:343px;
+    height:130px;
+    font-size:15px;
+    color:#E9E6DF;
+    text-align:left;
+    margin:20px 0 10px 10px;
+}
+
+.BoxNews
+{
+    width:573px;
+    height:110px;
+}
+
+.ImgNews
+{
+    float:left;
+    width:140px;
+    height:100px;
+    border:0px;    
+}
+
+.BoxNewsArchive
+{
+    float:right;
+    width:423px;
+    height:100px;
+}
+
+.TitleNews
+{
+    font-family:Times New Roman;
+    font-size:14px;
+    color:#034399;
+    text-align:left;
+    text-decoration:none;
+}
+
+.TitleNews a:hover
+{
+    font-family:Times New Roman;
+    font-size:14px;
+    color:#820000; 
+    text-align:left;
+    text-decoration:none;
+}
+
+
+.TextNews
+{
+    text-align:left;
+    color:#6B6B6B;
+    text-decoration:none;
+}
+
+.ImgDetailsNews
+{
+     width:600px; 
+     height:350px; 
+     border:0px; 
+     margin:10px 0px 10px 80px;    
+}
+
+.TextDetailsNews
+{
+    font-family:Tahoma; 
+    font-size:12px; 
+    height:auto; color:Black; 
+    text-align:left;    
+}

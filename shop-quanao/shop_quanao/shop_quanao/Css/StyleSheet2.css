@@ -1,0 +1,126 @@
+﻿body 
+{
+    font-family:Tahoma;
+    font-size:12px;
+    background-color: #F1F1F2;
+}
+.BigBox
+{
+    clear:both;
+    margin:0px auto;
+    text-align:center;
+    width:980px;
+}
+.BannerTop
+{
+    width:980px;
+    height:101px;
+}
+.Search
+{
+    float:left;
+    margin-top:35px;
+    text-align:right;
+    height:26px;
+    width: 170px;
+}
+
+.Book
+{
+    margin-top:5px;
+    width:160px;
+    height:20px;
+    font-size:12px;
+    font-style:inherit;
+    font-weight:bold;
+    color:Black;
+    float:left;
+}
+.LoaiSach
+{
+    width:980px;
+    height:300px;
+}
+.LoaiSach1
+{
+    background-color: #FEFEFE;
+    width:201px;
+    height:300px;
+    float:left;    
+}
+.BannerLoaiSach
+{
+    background-color: #FEFEFE;
+    width:200px;
+    height:55px;
+    border-bottom:1px solid gray;
+
+}
+.QuangCao
+{
+    margin-top:10px;
+    width:980px;
+    height:90px;
+    background-color:Orange;
+    float:left;
+}
+.DivLoaiSach
+{
+    font-size: 15px;
+    font-weight: bold;
+    height:40px;
+}
+.sp{
+	list-style:none;
+	
+}
+
+.sp li
+{
+    margin:0px auto;
+    text-align:center;
+    background:#F0F0F0;
+    width:150px;
+    height:33px;
+    float:left;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 5px 5px 5px black;
+    -webkit-box-shadow: 5px 5px 5px black;
+    box-shadow: 5px 5px 5px black;
+}
+.sp li:hover
+{
+    margin:0px auto;
+    text-align:center;
+    background:#C0C0C0;
+    width:150px;
+    height:33px;
+    float:left;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 5px 5px 5px black;
+    -webkit-box-shadow: 5px 5px 5px black;
+    box-shadow: 5px 5px 5px black;
+    margin-left:5px;
+    margin-top:5px;
+}
+.Banner2
+{
+    width:980px;
+    height:33px;
+    background-image: none; 
+    background-repeat: repeat; 
+    background-attachment: fixed; 
+    background-color:Black;
+    float:left;
+}
+.bookDetails
+{
+    margin-top:35px;
+    margin-left:20px;
+    width:160px;
+    height:170px;
+    border:1px solid gray;
+    float:left;
+}
