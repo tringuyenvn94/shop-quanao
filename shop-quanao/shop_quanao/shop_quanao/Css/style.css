@@ -1,27 +1,272 @@
-﻿* {margin:0; padding:0}
-body {font:12px Verdana, Arial, Helvetica, sans-serif;}
+﻿*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    font: 12px Verdana, Arial, Helvetica, sans-serif;
+}
 
-#gallery {position:relative; width:686px; margin:40px auto; padding:10px; border:6px solid #fff; background:#AAA}
+#gallery
+{
+    position: relative;
+    width: 686px;
+    margin: 40px auto;
+    padding: 10px;
+    border: 6px solid #fff;
+    background: #AAA;
+}
 
-#images {border:2px solid #9ac1c9; height:225px; background:#eef5f6; margin-bottom:20px}
+#images
+{
+    border: 2px solid #9ac1c9;
+    height: 225px;
+    background: #eef5f6;
+    margin-bottom: 20px;
+}
 
-#image {position:relative; width:672px; height:375px; padding:5px; border:0px solid #666; background:#FFF url(images/loading.gif) center center no-repeat}
+#image
+{
+    position: relative;
+    width: 672px;
+    height: 375px;
+    padding: 5px;
+    border: 0px solid #666;
+    background: #FFF url(images/loading.gif) center center no-repeat;
+}
 
-#image img {position:absolute; top:5px; left:5px}
+#image img
+{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
 
-#thumbwrapper {margin-top:10px; padding:5px 0; width:757px; height:100px; border:0px solid #666; background:#FFF}
+#thumbwrapper
+{
+    margin-top: 10px;
+    padding: 5px 0;
+    width: 757px;
+    height: 100px;
+    border: 0px solid #666;
+    background: #FFF;
+}
 
-#thumbarea {position:relative; overflow:hidden; height:100px; width:757px; }
+#thumbarea
+{
+    position: relative;
+    overflow: hidden;
+    height: 100px;
+    width: 757px;
+}
 
-#thumbs {position:absolute; list-style:none; margin-left:5px; height:100px; width:10000px; border-right:5px solid #FFF}
+#thumbs
+{
+    position: absolute;
+    list-style: none;
+    margin-left: 5px;
+    height: 100px;
+    width: 10000px;
+    border-right: 5px solid #FFF;
+}
 
-#thumbs li {float:left; margin-right:5px; cursor:pointer}
+#thumbs li
+{
+    float: left;
+    margin-right: 5px;
+    cursor: pointer;
+}
 
-.imgnav {position:absolute; height:375px; width:20%; z-index:100; height:375px; width:20%; z-index:100; outline:none; cursor:pointer}
+.imgnav
+{
+    position: absolute;
+    height: 375px;
+    width: 20%;
+    z-index: 100;
+    height: 375px;
+    width: 20%;
+    z-index: 100;
+    outline: none;
+    cursor: pointer;
+}
 
-#previmg {left:0; background:url(images/left.gif) left center no-repeat; border-left:5px solid #FFF}
+#previmg
+{
+    left: 0;
+    background: url(images/left.gif) left center no-repeat;
+    border-left: 5px solid #FFF;
+}
 
-#previmg:hover {opacity:1; filter:alpha(opacity=100)}
+#previmg:hover
+{
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
 
-#nextimg {right:0; background:url(images/right.gif) right center no-repeat; border-right:5px solid #FFF}
+#nextimg
+{
+    right: 0;
+    background: url(images/right.gif) right center no-repeat;
+    border-right: 5px solid #FFF;
+}
 
+
+#menutop
+{
+    background-image: url('../Img/bg-top.jpg');
+    height: 35px;
+}
+
+#menutop .menu1
+{
+    width: 1000px;
+    font: normal 12px arial;
+    clear: both;
+    text-align: center;
+    line-height: 30px;
+    margin: 0 auto;
+}
+
+#menutop .menu1 .left
+{
+    float: left;
+}
+
+#menutop .menu1 .right a
+{
+    padding: 0 10px;
+}
+
+#menutop .menu1 .right a:hover
+{
+    color: #c00;
+}
+
+#menutop .menu1 .right a.pimg
+{
+    padding: 0 10px 0 25px;
+}
+
+
+#list-cart-detail thead th, #list-cart-detail tfoot td, .customer-info thead th, .customer-exists-info thead th, #view-cart-detail thead th, #view-cart-detail tfoot td
+{
+    padding: 2px;
+    font-weight: 700;
+    font-size: 13px;
+    font-family: 'lucida grande' , tahoma, verdana, arial, sans-serif;
+}
+
+#list-cart-detail tbody td, #list-cart-detail th.name
+{
+    font-family: 'lucida grande' , tahoma, verdana, arial, sans-serif;
+    font-size: 12px;
+}
+
+#list-cart-detail .name, #view-cart-detail tbody td.name, #view-cart-detail .name, #list-cart-detail tfoot td
+{
+    text-align: left;
+}
+
+#list-cart-detail .quantity, #list-cart-detail .price, #list-cart-detail .total, #view-cart-detail .quantity, #view-cart-detail .price, #view-cart-detail .total, .right
+{
+    text-align: right;
+}
+
+.show-cart-info, .show-customer-inf
+{
+    /*border-bottom: 2px solid #333333;*/
+    font-family: verdana;
+    font-size: 12px;
+    padding-left: 5px;
+    background: #f3f3f3;
+}
+
+.product-info
+{
+    border: solid 1px #cccccc;
+    padding: 5px 2px;
+}
+
+.main-cart-content
+{
+    background: #f3f3f3;
+    padding: 10px;
+    margin: -1px;
+    margin-top:20px;
+    border: 1px solid #fff;
+    box-shadow: 0 0 5px #dfdfdf;
+    -moz-box-shadow: 0 0 5px #dfdfdf;
+    -webkit-box-shadow: 0 0 5px #dfdfdf;
+}
+
+.label_intro
+{
+    color: #FF0000;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 29px;
+}
+
+.required, .cart-info tbody span.stock, .box .box-content-account a:hover, #status_cart_total
+{
+    color: red;
+    font-weight: 700;
+}
+
+#checkout input[type="text"], select, textarea
+{
+    width: 270px;
+    margin: 3px;
+    padding: 2px;
+    border: 1px solid #D5D5D5;
+    font-family: tahoma;
+    background-color: #FFFFFF;
+}
+
+.customer-exists-info input[type="text"], select, textarea
+{
+    width: 255px;
+    margin: 3px;
+    padding: 2px;
+    border: 1px solid #D5D5D5;
+    font-family: Arial;
+    background-color: #FFFFFF;
+    font-size: 13px;
+}
+
+.customer-exists-info td
+{
+    font-size: 12px;
+    color: #222;
+    font-family: 'lucida grande' , tahoma, verdana, arial, sans-serif;
+}
+
+.customer-exists-info .checkout_error
+{
+    padding-left: 8px;
+    font-size: 11px;
+}
+
+.customer-exists-info .error
+{
+    background-color: yellow;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 2px;
+    margin-left: 2px;
+}
+
+.customer-exists-info .name input[type='radio']
+{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 3px;
+}
+
+.customer-exists-info .name label
+{
+    font-family: 'lucida grande' , tahoma, verdana, arial, sans-serif;
+    font-size: 12px;
+    color: #005580;
+}

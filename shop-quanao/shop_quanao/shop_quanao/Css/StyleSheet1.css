@@ -400,10 +400,16 @@
 
 .BoxBottom
 {
+    width: 100%;
+    background: 0px 50% rgb(253, 253, 253);
+}
+
+/*.BoxBottom
+{
     height: 150px;
     background-image: url('../Img/BannerButtom.png');
     width: 1340px;
-}
+}*/
 
 .TextTitleNews
 {
