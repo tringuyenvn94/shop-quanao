@@ -83,96 +83,221 @@
 	});
         });
     </script>
+    <style type="text/css">
+        .glossymenu
+        {
+            position: relative;
+            padding: 0 0 0 5px;
+            margin: 0px;
+            background-color: #3AB3A9; /*tab background image path*/
+            height: 30px;
+            list-style: none;
+        }
+        
+        .glossymenu li
+        {
+            float: left;
+            border-right: #FFFFFF 1px groove;
+        }
+        
+        .glossymenu li a
+        {
+            float: left;
+            display: block;
+            color: #FFFFFF;
+            text-decoration: none;
+            font-family: sans-serif;
+            font-size: 15px;
+            padding: 0 0 0 5px; /*5px = width of menu1*/
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            cursor: pointer;
+        }
+        
+        .glossymenu li a span
+        {
+            float: left;
+            display: block;
+            padding: 0 10px 0 8px; /*Padding of menu items*/
+        }
+        
+        .glossymenu li.current a, .glossymenu li a:hover
+        {
+            color: #000000;
+            background: url(image/menu1.gif) no-repeat bottom; /*left tab image path*/
+            background-position: left;
+        }
+        
+        .glossymenu li.current a span, .glossymenu li a:hover span
+        {
+            color: #000000;
+            background: url(image/menu2.gif) no-repeat right bottom; /*right tab image path*/
+        }
+        a
+        {
+            text-decoration: none;
+        }
+        a:hover
+        {
+            color: #FF9900;
+        }
+    </style>
+    <script language="javascript" type="text/javascript">
+        var menu_2 = new Array()
+        menu_2[0] = '<a href="#">Sup menu demo 1</a>'
+        menu_2[1] = '<a href="#">Sup menu demo 2</a>'
+        menu_2[2] = '<a href="#">Sup menu demo 3</a>'
+        menu_2[3] = '<a href="#">Sup menu demo 4</a>'
+
+        var menu_3 = new Array()
+        menu_3[0] = '<a href="#">Sup menu demo 5</a>'
+        menu_3[1] = '<a href="#">Sup menu demo 6</a>'
+        menu_3[2] = '<a href="#">Sup menu demo 7</a>'
+        function show(id) {
+            var men = "menu" + id;
+            document.getElementById(men).style.display = 'block';
+
+        }
+        function hiden(id) {
+            var men = "menu" + id;
+            document.getElementById(men).style.display = 'none';
+        }
+    </script>
 </head>
 <body>
     <form id="form2" runat="server">
+    <div id="menutop">
+        <div class="menu1">
+            <div class="left">
+                <a href="Default.aspx" title="">
+                    <img src="Img/home.jpg" alt="" style="padding-right: 5px;">Trang chủ</a> <a href="dangnhap.aspx"
+                        title="">
+                        <img src="Img/login.png" alt="" style="padding-right: 5px;">Đăng nhập</a>&nbsp;&nbsp;
+                <a href="dangky.aspx" title="">
+                    <img src="Img/register.png" alt="" style="padding-right: 5px;">Đăng ký</a>&nbsp;&nbsp;
+                <a href="" title="">
+                    <img src="Img/fogot.png" alt="" style="padding-right: 5px;">Quên mật khẩu?</a>
+            </div>
+            <div class="right">
+                <a href="" title="">Tin tức</a>|<a href="#" title="">Liên hệ</a>|<a href="" title="">
+                    <span class="pimg" style="padding: 0px;">
+                        <img src="Img/hotline.jpg" alt="" style="padding-right: 5px;" title="Hotline: 1234567890">
+                        Hotline: <span id="Menu_lblHotline"><span style="color: rgb(255, 102, 0);">1234567890</span></span></span>
+            </div>
+            <div class="clear">
+            </div>
+        </div>
+    </div>
     <div class="Banner1">
         <div class="TextUniversity1">
             <a></a>
         </div>
     </div>
-    <div style="width: 1340px; clear: both; margin: auto;">
-        <div id="navigation">
-            <ul>
-                <li><a href="#">Thời Trang Nam</a> <span style="z-index: 100;">
-                    <asp:HyperLink ID="hplAothunam" runat="server" NavigateUrl="SanPham.aspx?url=nam0">Áo thun</asp:HyperLink>
-                    <asp:HyperLink ID="hplAosominam" runat="server" NavigateUrl="SanPham.aspx?url=nam1">Áo sơ mi</asp:HyperLink>
-                    <asp:HyperLink ID="hplAokhoacnam" runat="server" NavigateUrl="SanPham.aspx?url=nam2">Áo Khoác</asp:HyperLink>
-                    <asp:HyperLink ID="hplQuanjeannam" runat="server" NavigateUrl="SanPham.aspx?url=nam3">Quần Jean</asp:HyperLink>
-                    <asp:HyperLink ID="hplQuankakinam" runat="server" NavigateUrl="SanPham.aspx?url=nam4">Quần Kaki</asp:HyperLink>
-                </span></li>
-                <li><a href="#">Thời Trang Nữ</a> <span style="z-index: 100;">
-                    <asp:HyperLink ID="hplAothunnu" runat="server" NavigateUrl="SanPham.aspx?url=nu0">Áo thun</asp:HyperLink>
-                    <asp:HyperLink ID="hplAosominu" runat="server" NavigateUrl="SanPham.aspx?url=nu1">Áo sơ mi</asp:HyperLink>
-                    <asp:HyperLink ID="hplAokhoacnu" runat="server" NavigateUrl="SanPham.aspx?url=nu2">Áo Khoác</asp:HyperLink>
-                    <asp:HyperLink ID="hplQuanjeannu" runat="server" NavigateUrl="SanPham.aspx?url=nu3">Quần Jean</asp:HyperLink>
-                    <asp:HyperLink ID="hplVaynu" runat="server" NavigateUrl="SanPham.aspx?url=nu5">Váy</asp:HyperLink>
-                </span></li>
-                <li>
-                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="SanPham.aspx?url=pknam">Phụ Kiện Nam</asp:HyperLink>
-                </li>
-                <li>
-                    <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="SanPham.aspx?url=pknu">Phụ Kiện Nữ</asp:HyperLink>
-                </li>
-                <li>
-                    <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="SanPham.aspx?url=saleoff">SaleOff</asp:HyperLink>
-                </li>
-                <li>
-                    <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="SanPham.aspx?url=new">New</asp:HyperLink>
-                </li>
-                <li>
-                    <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="SanPham.aspx?url=hot">Hàng HOT</asp:HyperLink>
-                </li>
-            </ul>
+    <div style="width: 100%;">
+        <div style="width: 100%; background-color: #3AB3A9;">
+            <div style="width: 980px; margin: auto; clear: both;">
+                <ul class="glossymenu">
+                    <li><a href="Default.aspx" onmouseover="show(1)" onmouseout="hiden(1)"><span>Trang Nhất</span></a></li>
+                    <li><a href="sanpham.aspx?SanPham.aspx?url=nam" onmouseover="show(2)" onmouseout="hiden(2)">
+                        <span>Thời Trang Nam</span></a></li>
+                    <li><a href="SanPham.aspx?url=nu" onmouseover="show(3)" onmouseout="hiden(3)"><span>
+                        Thời Trang Nữ</span></a></li>
+                    <li><a href="SanPham.aspx?url=phukien" onmouseover="show(4)" onmouseout="hiden(4)"><span>
+                        Phụ Kiện </span></a></li>
+                    <li><a href="SanPham.aspx?url=saleoff" onmouseover="show(5)" onmouseout="hiden(5)"><span>
+                        Sale Off</span></a></li>
+                    <li><a href="SanPham.aspx?url=new" onmouseover="show(6)" onmouseout="hiden(6)"><span>
+                        New</span></a></li>
+                    <li><a href="SanPham.aspx?url=hot" onmouseover="show(7)" onmouseout="hiden(7)"><span>
+                        Hot</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div style="background: #d0d8e0; width: 100%;">
+            <div style="background: #d0d8e0; width: 980px; height: 25px; margin: auto; clear: both;
+                font-family: sans-serif; font-size: 15px">
+                <div id="menu2" style="display: none;" onmouseover="show(2)" onmouseout="hiden(2)">
+                    <ul style="list-style: none;">
+                        <li style="border-right: #FFFFFF 1px groove; float: left"><a style="float: left;
+                            display: block; color: #FFFFFF; text-decoration: none; font-family: sans-serif;
+                            font-size: 13px; padding: 0 0 0 5px; height: 25px; line-height: 25px; text-align: center;
+                            cursor: pointer;" href="SanPham.aspx?url=nam0"><span style="float: left; display: block;
+                                padding: 0 10px 0 8px;">Áo thun</span></a> </li>
+                        <li style="border-right: #FFFFFF 1px groove; float: left"><a style="float: left;
+                            display: block; color: #FFFFFF; text-decoration: none; font-family: sans-serif;
+                            font-size: 13px; padding: 0 0 0 5px; height: 25px; line-height: 25px; text-align: center;
+                            cursor: pointer;" href="SanPham.aspx?url=nam1"><span style="float: left; display: block;
+                                padding: 0 10px 0 8px;">Áo sơ mi</span></a> </li>
+                        <li style="border-right: #FFFFFF 1px groove; float: left"><a style="float: left;
+                            display: block; color: #FFFFFF; text-decoration: none; font-family: sans-serif;
+                            font-size: 13px; padding: 0 0 0 5px; height: 25px; line-height: 25px; text-align: center;
+                            cursor: pointer;" href="SanPham.aspx?url=nam2"><span style="float: left; display: block;
+                                padding: 0 10px 0 8px;">Áo khoác</span></a> </li>
+                        <li style="border-right: #FFFFFF 1px groove; float: left"><a style="float: left;
+                            display: block; color: #FFFFFF; text-decoration: none; font-family: sans-serif;
+                            font-size: 13px; padding: 0 0 0 5px; height: 25px; line-height: 25px; text-align: center;
+                            cursor: pointer;" href="SanPham.aspx?url=nam3"><span style="float: left; display: block;
+                                padding: 0 10px 0 8px;">Quần Jean</span></a> </li>
+                        <li style="border-right: #FFFFFF 1px groove; float: left"><a style="float: left;
+                            display: block; color: #FFFFFF; text-decoration: none; font-family: sans-serif;
+                            font-size: 13px; padding: 0 0 0 5px; height: 25px; line-height: 25px; text-align: center;
+                            cursor: pointer;" href="SanPham.aspx?url=nam4"><span style="float: left; display: block;
+                                padding: 0 10px 0 8px;">Quần Kaki</span></a> </li>
+                    </ul>
+                </div>
+                <div id="menu3" style="display: none;" onmouseover="show(3)" onmouseout="hiden(3)">
+                    <ul style="list-style: none;">
+                        <li style="border-right: #FFFFFF 1px groove; float: left"><a style="float: left;
+                            display: block; color: #FFFFFF; text-decoration: none; font-family: sans-serif;
+                            font-size: 13px; padding: 0 0 0 5px; height: 25px; line-height: 25px; text-align: center;
+                            cursor: pointer;" href="SanPham.aspx?url=nu0"><span style="float: left; display: block;
+                                padding: 0 10px 0 8px;">Áo thun</span></a> </li>
+                        <li style="border-right: #FFFFFF 1px groove; float: left"><a style="float: left;
+                            display: block; color: #FFFFFF; text-decoration: none; font-family: sans-serif;
+                            font-size: 13px; padding: 0 0 0 5px; height: 25px; line-height: 25px; text-align: center;
+                            cursor: pointer;" href="SanPham.aspx?url=nu1"><span style="float: left; display: block;
+                                padding: 0 10px 0 8px;">Áo sơ mi</span></a> </li>
+                        <li style="border-right: #FFFFFF 1px groove; float: left"><a style="float: left;
+                            display: block; color: #FFFFFF; text-decoration: none; font-family: sans-serif;
+                            font-size: 13px; padding: 0 0 0 5px; height: 25px; line-height: 25px; text-align: center;
+                            cursor: pointer;" href="SanPham.aspx?url=nu2"><span style="float: left; display: block;
+                                padding: 0 10px 0 8px;">Áo khoác</span></a> </li>
+                        <li style="border-right: #FFFFFF 1px groove; float: left"><a style="float: left;
+                            display: block; color: #FFFFFF; text-decoration: none; font-family: sans-serif;
+                            font-size: 13px; padding: 0 0 0 5px; height: 25px; line-height: 25px; text-align: center;
+                            cursor: pointer;" href="SanPham.aspx?url=nu3"><span style="float: left; display: block;
+                                padding: 0 10px 0 8px;">Quần Jean</span></a> </li>
+                        <li style="border-right: #FFFFFF 1px groove; float: left"><a style="float: left;
+                            display: block; color: #FFFFFF; text-decoration: none; font-family: sans-serif;
+                            font-size: 13px; padding: 0 0 0 5px; height: 25px; line-height: 25px; text-align: center;
+                            cursor: pointer;" href="SanPham.aspx?url=nu4"><span style="float: left; display: block;
+                                padding: 0 10px 0 8px;">Váy Hàn Quốc</span></a> </li>
+                    </ul>
+                </div>
+                <div id="menu4" style="display: none;" onmouseover="show(4)" onmouseout="hiden(4)">
+                    <ul style="list-style: none;">
+                        <li style="border-right: #FFFFFF 1px groove; float: left"><a style="float: left;
+                            display: block; color: #FFFFFF; text-decoration: none; font-family: sans-serif;
+                            font-size: 13px; padding: 0 0 0 5px; height: 25px; line-height: 25px; text-align: center;
+                            cursor: pointer;" href="SanPham.aspx?url=phukien1"><span style="float: left; display: block;
+                                padding: 0 10px 0 8px;">Phụ Kiện Nam</span></a> </li>
+                        <li style="border-right: #FFFFFF 1px groove; float: left"><a style="float: left;
+                            display: block; color: #FFFFFF; text-decoration: none; font-family: sans-serif;
+                            font-size: 13px; padding: 0 0 0 5px; height: 25px; line-height: 25px; text-align: center;
+                            cursor: pointer;" href="SanPham.aspx?url=phukien0"><span style="float: left; display: block;
+                                padding: 0 10px 0 8px;">Phụ Kiện Nữ</span></a> </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
-    <%--<div class="Menu">
-        <div class="Menu2">
-            <div class="TextMenu" style="margin-left: 190px;">
-                <a>Trang chủ</a></div>
-            <div class="TextMenu">
-                <a>Thời trang nam </a>
-            </div>
-            <div class="TextMenu">
-                <a>Thời trang nữ</a></div>
-            <div class="TextMenu">
-                <a>Phụ kiện</a></div>
-            <div class="TextMenu">
-                <a>Sale Off</a></div>
-            <div class="TextMenu">
-                <a>New</a></div>
-            <div class="TextMenu">
-                <a>Hot</a></div>
-        </div>
-    </div>--%>
     <div style="height: 6px; background-image: url('../Img/3.png');">
     </div>
     <div class="BoxCenter">
         <div style="float: left; width: 790px;">
-            <div id="imagearea">
-                <div id="image" style="width: 754px; height: 315px; top: 0px; left: 0px; margin-top: 40px;">
-                    <a href="javascript:slideShow.nav(-1)" class="imgnav " id="previmg"></a><a href="javascript:slideShow.nav(1)"
-                        class="imgnav " id="nextimg"></a>
-                </div>
-            </div>
-            <div id="thumbwrapper">
-                <div id="thumbarea">
-                    <ul id="thumbs">
-                        <li value="1">
-                            <img src="Img/Full/1.png" width="179" height="100" alt="" /></li>
-                        <li value="2">
-                            <img src="Img/Full/2.png" width="179" height="100" alt="" /></li>
-                        <li value="3">
-                            <img src="Img/Full/3.png" width="179" height="100" alt="" /></li>
-                        <li value="4">
-                            <img src="Img/Full/4.png" width="179" height="100" alt="" /></li>
-                        <li value="5">
-                            <img src="Img/Full/5.png" width="179" height="100" alt="" /></li>
-                        <li value="6">
-                            <img src="Img/Full/6.png" width="179" height="100" alt="" /></li>
-                    </ul>
-                </div>
-            </div>
+            <asp:ContentPlaceHolder ID="Contentslide" runat="server">
+            </asp:ContentPlaceHolder>
             <script type="text/javascript">
                 var imgid = 'image';
                 var imgdir = 'Img/Full';
@@ -191,11 +316,16 @@
         </div>
         <div class="RightBox">
             <div class="DetailRightBox">
-                <div class="TextRightBox">
-                    <a href="">» Thành viên</a>
+                <div class="TitelRightBox">
+                    GIỎ HÀNG
                 </div>
-                <div class="TextRightBox2">
-                    <a>» Admin</a>
+                <div class="BoxImgRight">
+                    <div style="height: 25px; margin-top: 5px">
+                        <asp:Label ID="lblTongSL" runat="server" Text="Số lượng : 0 sản phẩm " ForeColor="#663300"></asp:Label>
+                    </div>
+                    <asp:ImageButton ID="ibtnXemGio" runat="server" ImageUrl="~/Img/nut-xemgio.png" PostBackUrl="~/XemGioHang.aspx" />
+                    <asp:ImageButton ID="ibtnThanhToang" runat="server" ImageUrl="~/Img/nut-thanhtoan.png"
+                        PostBackUrl="~/ThanhToan.aspx" />
                 </div>
                 <div class="TitelRightBox">
                     HÀNG MỚI
@@ -221,32 +351,19 @@
                     TRANG PHỤC
                 </div>
                 <div class="TextRightBox">
-                    <a>» Áo thun</a>
+                    <a href="SanPham.aspx?url=nam0">» Áo thun</a>
                 </div>
                 <div class="TextRightBox">
-                    <a>» Áo khoác</a>
+                    <a href="SanPham.aspx?url=nam1">» Áo sơ mi</a>
                 </div>
                 <div class="TextRightBox">
-                    <a>» Quần Jeans</a>
+                    <a href="SanPham.aspx?url=nam2">» Áo khoác</a>
                 </div>
                 <div class="TextRightBox">
-                    <a>» Quần thể thao</a>
+                    <a href="SanPham.aspx?url=nam3">» Quần Jeans</a>
                 </div>
                 <div class="TextRightBox">
-                    <a>» Quần tây</a>
-                </div>
-                <br />
-                <div class="Text2RightBox">
-                    GIÀY DÉP
-                </div>
-                <div class="TextRightBox">
-                    <a>» Giày thể thao</a>
-                </div>
-                <div class="TextRightBox">
-                    <a>» Giày lười</a>
-                </div>
-                <div class="TextRightBox">
-                    <a>» Giày da công sơ</a>
+                    <a href="SanPham.aspx?url=nam4">» Quần Kaki</a>
                 </div>
                 <br />
                 <div class="TitelRightBox">
@@ -263,38 +380,21 @@
                     TRANG PHỤC
                 </div>
                 <div class="TextRightBox">
-                    <a>» Áo Thun</a>
+                    <a href="SanPham.aspx?url=nu0">» Áo Thun</a>
                 </div>
                 <div class="TextRightBox">
-                    <a>» Váy</a>
+                    <a href="SanPham.aspx?url=nu1">» Áo sơ mi</a>
                 </div>
                 <div class="TextRightBox">
-                    <a>» Quần Jeans</a>
+                    <a href="SanPham.aspx?url=nu2">» Áo khoác</a>
                 </div>
                 <div class="TextRightBox">
-                    <a>» Đầm dạo phố</a>
+                    <a href="SanPham.aspx?url=nu3">» Quần Jeans</a>
                 </div>
                 <div class="TextRightBox2">
-                    <a>» Đầm dự tiệc</a>
+                    <a href="SanPham.aspx?url=nu4">» Váy Hàn Quốc</a>
                 </div>
-                <div class="Text2RightBox">
-                    GIÀY DÉP
-                </div>
-                <div class="TextRightBox">
-                    <a>» Giày cao gót</a>
-                </div>
-                <div class="TextRightBox">
-                    <a>» Giày búp bê</a>
-                </div>
-                <div class="TextRightBox">
-                    <a>» Giày vải</a>
-                </div>
-                <div class="TextRightBox">
-                    <a>» Giày mọi</a>
-                </div>
-                <div class="TextRightBox2">
-                    <a>» Xăng đan</a>
-                </div>
+                <br />
                 <div class="TitelRightBox">
                     LIÊN HỆ TRỰC TIUYẾN
                 </div>
@@ -378,9 +478,238 @@
         </div>
     </div>
     <div class="BoxBottom">
-        <h3>
-            thông tin liên hệ
-        </h3>
+        <div style="margin: auto; clear: both; width: 980px">
+            <div class="footer__main" style="margin: 0px; padding: 0px; color: rgb(64, 64, 64);
+                font-family: Helvetica, Arial, sans-serif; font-size: 12px; line-height: 14.3999996185303px;
+                background: 0px 50% rgb(253, 253, 253);">
+                <div class="footer__main__service" style="margin: 0px; padding: 10px 0px; border-bottom-width: 0px;
+                    box-sizing: border-box;">
+                    <div class="footer__main__child main__service-customer" style="margin: 0px; padding: 0px;
+                        display: table-cell; width: 300px; border-right-width: 0px;">
+                        <div class="footer__item" style="margin: 0px; padding: 0px 10px 0px 0px; box-sizing: border-box;
+                            position: relative;">
+                            <div class="footer__item__title" style="margin: 0px 0px 2px; padding: 0px; font-weight: 700;
+                                color: rgb(84, 83, 81); font-size: 1em; text-transform: uppercase;">
+                                CHĂM S&Oacute;C KH&Aacute;CH H&Agrave;NG</div>
+                            <div class="main__service-customer__item" style="margin: 0px; padding: 0px;">
+                                <a class="footer__item__link" href="http://www.lazada.vn/faq/" style="margin: 0px 0px 2px;
+                                    padding: 0px; text-decoration: none; color: rgb(84, 83, 81); display: block;
+                                    line-height: 15px; background: transparent;">Những c&acirc;u hỏi thường gặp</a><a
+                                        class="footer__item__link" href="http://www.lazada.vn/faq/#answer-faq-paymentmethod-ans"
+                                        style="margin: 0px 0px 2px; padding: 0px; text-decoration: none; color: rgb(84, 83, 81);
+                                        display: block; line-height: 15px; background: transparent;">Phương thức thanh to&aacute;n</a><a
+                                            class="footer__item__link" href="http://www.lazada.vn/faq/#answer-faq-placeorder-ans"
+                                            style="margin: 0px 0px 2px; padding: 0px; text-decoration: none; color: rgb(84, 83, 81);
+                                            display: block; line-height: 15px; background: transparent;">Hướng dẫn đặt h&agrave;ng</a><a
+                                                class="footer__item__link" href="http://www.lazada.vn/faq/#answer-faq-leadtime-ans"
+                                                style="margin: 0px 0px 2px; padding: 0px; text-decoration: none; color: rgb(84, 83, 81);
+                                                display: block; line-height: 15px; background: transparent;">Giao nhận h&agrave;ng</a><a
+                                                    class="footer__item__link" href="http://www.lazada.vn/kiem-tra-don-hang/" style="margin: 0px 0px 2px;
+                                                    padding: 0px; text-decoration: none; color: rgb(84, 83, 81); display: block;
+                                                    line-height: 15px; background: transparent;">Tra cứu đơn h&agrave;ng trực tuyến</a><a
+                                                        class="footer__item__link" href="http://www.lazada.vn/faq/#answer-faq-howtoreturn-ans"
+                                                        style="margin: 0px 0px 2px; padding: 0px; text-decoration: none; color: rgb(84, 83, 81);
+                                                        display: block; line-height: 15px; background: transparent;">Hướng dẫn đổi trả h&agrave;ng</a><a
+                                                            class="footer__item__link" href="http://www.lazada.vn/huong-dan-bao-hanh" style="margin: 0px 0px 2px;
+                                                            padding: 0px; text-decoration: none; color: rgb(84, 83, 81); display: block;
+                                                            line-height: 15px; background: transparent;">Hướng dẫn bảo h&agrave;nh</a>
+                                <p class="footer__item__text" style="margin: 0px; padding: 0px; color: rgb(106, 106, 106);
+                                    line-height: 16px;">
+                                    HCM&nbsp;<b style="margin: 0px; padding: 0px;">(08) 3942 1188</b>&nbsp;<br style="margin: 0px;
+                                        padding: 0px;" />
+                                    HN&nbsp;<b style="margin: 0px; padding: 0px;">(04) 7300 1188</b><br style="margin: 0px;
+                                        padding: 0px;" />
+                                    Thứ 2 - thứ 6: 7h - 20h<br style="margin: 0px; padding: 0px;" />
+                                    Thứ 7, CN &amp; ng&agrave;y lễ: 8h - 17h<br style="margin: 0px; padding: 0px;" />
+                                    Hoặc gửi y&ecirc;u cầu&nbsp;<a href="http://www.lazada.vn/contact/" style="margin: 0px;
+                                        padding: 0px; text-decoration: none; color: rgb(5, 156, 183) !important; background: transparent;">tại
+                                        đ&acirc;y</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__main__child main__service-affiliate" style="margin: 0px; padding: 0px;
+                        display: table-cell; width: 300px; border-right-width: 0px;">
+                        <div class="footer__item" style="margin: 0px; padding: 0px 10px; box-sizing: border-box;
+                            position: relative;">
+                            <div class="footer__item__title" style="margin: 0px 0px 2px; padding: 0px 0px 0px 2px;
+                                font-weight: 700; color: rgb(84, 83, 81); font-size: 1em; text-transform: uppercase;">
+                                SHOP VIỆT NAM</div>
+                            <a class="affiliate__link footer__item__link" href="http://www.lazada.vn/about/"
+                                style="margin: 0px 0px 2px; padding: 0px 2px; text-decoration: none; color: rgb(84, 83, 81);
+                                display: block; line-height: 15px; background: transparent;">Về Shop Việt Nam</a><a
+                                    class="affiliate__link footer__item__link" href="http://www.lazada.vn/affiliate/"
+                                    style="margin: 0px 0px 2px; padding: 0px 2px; text-decoration: none; color: rgb(84, 83, 81);
+                                    display: block; line-height: 15px; background: transparent;">Chương tr&igrave;nh
+                                    Shop Việt Nam</a><a class="affiliate__link footer__item__link" href="http://www.lazada.vn/danh-cho-doanh-nghiep/"
+                                        style="margin: 0px 0px 2px; padding: 0px 2px; text-decoration: none; color: rgb(84, 83, 81);
+                                        display: block; line-height: 15px; background: transparent;">B&aacute;n h&agrave;ng
+                                        cho doanh nghiệp</a><a class="affiliate__link footer__item__link" href="http://www.lazada.vn/career-opportunity/"
+                                            style="margin: 0px 0px 2px; padding: 0px 2px; text-decoration: none; color: rgb(84, 83, 81);
+                                            display: block; line-height: 15px; background: transparent;">Tuyển dụng</a><a class="affiliate__link footer__item__link"
+                                                href="http://www.lazada.vn/terms-of-use/" style="margin: 0px 0px 2px; padding: 0px 2px;
+                                                text-decoration: none; color: rgb(84, 83, 81); display: block; line-height: 15px;
+                                                background: transparent;">Điều khoản mua b&aacute;n h&agrave;ng h&oacute;a</a><a
+                                                    class="affiliate__link footer__item__link" href="http://www.lazada.vn/privacy/"
+                                                    style="margin: 0px 0px 2px; padding: 0px 2px; text-decoration: none; color: rgb(84, 83, 81);
+                                                    display: block; line-height: 15px; background: transparent;">Ch&iacute;nh s&aacute;ch
+                                                    bảo mật</a><a class="affiliate__link footer__item__link" href="http://www.lazada.vn/press/"
+                                                        style="margin: 0px 0px 2px; padding: 0px 2px; text-decoration: none; color: rgb(84, 83, 81);
+                                                        display: block; line-height: 15px; background: transparent;">B&aacute;o ch&iacute;</a><a
+                                                            class="affiliate__link footer__item__link" href="http://blog.lazada.vn/" style="margin: 0px 0px 2px;
+                                                            padding: 0px 2px; text-decoration: none; color: rgb(84, 83, 81); display: block;
+                                                            line-height: 15px; background: transparent;" wrc_done="true">Shop Blog</a>&nbsp;&nbsp;<a
+                                                                class="affiliate__link footer__item__link bg__color__purple" href="http://www.lazada.vn/marketplace/"
+                                                                style="margin: 0px 0px 2px; padding: 0px 2px; text-decoration: none; color: rgb(255, 255, 255);
+                                                                display: inline-block; line-height: 15px; background: rgb(201, 20, 141);">B&aacute;n
+                                                                h&agrave;ng c&ugrave;ng Shop</a><a class="affiliate__link footer__item__link" href="http://www.lazada.vn/brands/"
+                                                                    style="margin: 0px 0px 2px; padding: 0px 2px; text-decoration: none; color: rgb(84, 83, 81);
+                                                                    display: block; line-height: 15px; background: transparent;">Thương hiệu tại ShopS</a><a
+                                                                        class="affiliate__link footer__item__link" href="http://www.lazada.vn/store-directory/"
+                                                                        style="margin: 0px 0px 2px; padding: 0px 2px; text-decoration: none; color: rgb(84, 83, 81);
+                                                                        display: block; line-height: 15px; background: transparent;">Danh mục sản phẩm</a></div>
+                    </div>
+                    <div class="footer__main__child main__service-newsletter" style="margin: 0px; padding: 0px;
+                        width: 300px; display: table-cell; border-right-width: 0px;">
+                        <div class="footer__item footer-newsletter" style="margin: 0px; padding: 0px 10px;
+                            box-sizing: border-box; position: relative;">
+                            <form action="http://www.lazada.vn/index/newsletter/" class="newsletter-form" method="post"
+                            style="margin: 0px; padding: 0px;">
+                            <div class="footer__item__title" style="margin: 0px 0px 2px; padding: 0px; font-weight: 700;
+                                color: rgb(84, 83, 81); font-size: 1em; text-transform: uppercase;">
+                                ĐĂNG K&Yacute; NHẬN TIN</div>
+                            <div class="form-controls" style="margin: 0px; padding: 0px;">
+                                <div class="footer__item__text" style="margin: 0px; padding: 0px; color: rgb(84, 83, 81);">
+                                    Đăng k&yacute; nhận tin từ Shop v&agrave; nhận voucher 50.000 VND</div>
+                                <div class="footer__item__text" style="margin: 0px; padding: 0px; color: rgb(84, 83, 81);">
+                                    Email:</div>
+                                <input class="footer__item__input" name="NewsletterSignupForm[email]" placeholder="Địa chỉ email của bạn"
+                                    style="margin: 0px 0px 10px; padding-top: 2px; padding-bottom: 0px; font-family: inherit;
+                                    font-size: inherit; vertical-align: baseline; line-height: 1em; box-sizing: border-box;
+                                    outline: 0px; border: 1px solid rgb(153, 153, 153); width: 178px; font-style: inherit;
+                                    font-variant: inherit; font-weight: inherit; font-stretch: inherit; display: block;
+                                    border-radius: 3px; height: 24px; text-indent: 4px;" type="text" />
+                                <div class="footer__item__button-wrapper" style="margin: 0px 0px 10px; padding: 0px;
+                                    width: 180px; letter-spacing: -0.31em;">
+                                    <button class="footer__item__button footer__item__button-man form-item-button" name="subscription"
+                                        style="margin: 0px 7.1875px 0px 0px; padding: 5px 0px 3px; font-family: inherit;
+                                        color: rgb(255, 255, 255); font-size: inherit; vertical-align: top; line-height: inherit;
+                                        cursor: pointer; font-style: inherit; font-variant: inherit; font-weight: inherit;
+                                        font-stretch: inherit; overflow: visible; text-transform: uppercase; width: 82.796875px;
+                                        box-sizing: content-box; zoom: 1; text-rendering: auto; border: 1px solid rgb(5, 156, 183);
+                                        background-color: rgb(5, 156, 183);" value="men">
+                                        NAM</button>&nbsp;
+                                    <button class="footer__item__button footer__item__button-woman form-item-button"
+                                        name="subscription" style="margin: 0px; padding: 5px 0px 3px; font-family: inherit;
+                                        color: rgb(255, 255, 255); font-size: inherit; vertical-align: top; line-height: inherit;
+                                        cursor: pointer; font-style: inherit; font-variant: inherit; font-weight: inherit;
+                                        font-stretch: inherit; overflow: visible; text-transform: uppercase; width: 82.796875px;
+                                        box-sizing: content-box; zoom: 1; text-rendering: auto; border: 1px solid rgb(5, 156, 183);
+                                        background-color: rgb(5, 156, 183);" value="women">
+                                        NỮ</button></div>
+                            </div>
+                            <p class="form_error" style="margin: 0px; padding: 0px; color: rgb(210, 35, 42);
+                                visibility: hidden;">
+                                &nbsp;</p>
+                            <p class="form_success" style="margin: 0px; padding: 0px; color: rgb(0, 144, 201);
+                                visibility: hidden;">
+                                &nbsp;</p>
+                            </form>
+                            <div class="footer__item__text" style="margin: 0px; padding: 0px; color: rgb(84, 83, 81);">
+                                Th&ocirc;ng tin của bạn sẽ được giữ k&iacute;n tuyệt đối, v&agrave; bạn c&oacute;
+                                thể hủy đăng k&yacute; bất cứ l&uacute;c n&agrave;o. Mỗi email chỉ sử dụng được
+                                1 m&atilde; giảm gi&aacute;.<br style="margin: 0px; padding: 0px;" />
+                                Bằng việc đăng k&yacute; nhận tin từ Shop, bạn x&aacute;c nhận rằng bạn đ&atilde;
+                                đọc v&agrave; hiểu&nbsp;<a a="" href="http://www.lazada.vn/privacy-policy/" style="margin: 0px;
+                                    padding: 0px; outline: 0px; color: rgb(5, 156, 183) !important; background: transparent;">ch&iacute;nh
+                                    s&aacute;ch bảo mật</a>của ch&uacute;ng t&ocirc;i.</div>
+                        </div>
+                    </div>
+                    <div class="footer__main__child main__link-appdownload" style="margin: 0px; padding: 0px;
+                        width: 300px; display: table-cell; border-right-width: 0px;">
+                        <div class="footer__item" style="margin: 0px; padding: 0px 10px; box-sizing: border-box;
+                            position: relative;">
+                            <div class="footer__item__title" style="margin: 0px 0px 2px; padding: 0px; font-weight: 700;
+                                color: rgb(84, 83, 81); font-size: 1em; text-transform: uppercase;">
+                                TẢI NGAY ỨNG DỤNG Shop</div>
+                            <div class="appdownload__link" style="margin: 0px; padding: 0px; display: inline-block;
+                                vertical-align: top;">
+                                &nbsp;&nbsp;&nbsp;</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__top" style="margin: 0px; padding: 10px 0px 0px; border-bottom-width: 0px;
+                border-top-width: 1px; border-top-style: solid; border-top-color: rgb(183, 183, 183);
+                display: table; color: rgb(64, 64, 64); font-family: Helvetica, Arial, sans-serif;
+                font-size: 12px; line-height: 14.3999996185303px; background-color: rgb(253, 253, 253);">
+                <div class="footer__top__child footer__top__payment" style="margin: 0px; padding: 0px;
+                    display: table-cell; zoom: 1; word-spacing: normal; vertical-align: top; text-rendering: auto;
+                    box-sizing: border-box; width: 722px; border-right-width: 1px; border-right-style: dotted;
+                    border-right-color: rgb(183, 183, 183); border-left-width: 0px;">
+                    <div class="footer__top__title" style="margin: 0px 0px 5px; padding: 0px; text-transform: uppercase;
+                        font-weight: 700; color: rgb(84, 83, 81);">
+                        C&Aacute;CH THỨC THANH TO&Aacute;N</div>
+                    <div class="footer__top__item" style="margin: 0px 0px 10px; padding: 0px;">
+                        <div class="footer__item__icon icon icon-payment_ipayVisa" style="margin: 0px 4px 4px 0px;
+                            padding: 0px; height: 39px; line-height: 26px; overflow: hidden; display: inline-block;
+                            float: left; border-radius: 3px; vertical-align: text-top; width: 53px; background: url(http://static-02.lazada.vn/images/2014/sprites/icon-83573.png) 0px -3918px no-repeat;">
+                            &nbsp;</div>
+                        <div class="footer__item__icon icon icon-payment_ipayMaster" style="margin: 0px 4px 4px 0px;
+                            padding: 0px; height: 39px; line-height: 26px; overflow: hidden; display: inline-block;
+                            float: left; border-radius: 3px; vertical-align: text-top; width: 53px; background: url(http://static-02.lazada.vn/images/2014/sprites/icon-83573.png) 0px -3672px no-repeat;">
+                            &nbsp;</div>
+                        <div class="footer__item__icon icon icon-payment_ipayCOD" style="margin: 0px 4px 4px 0px;
+                            padding: 0px; height: 39px; line-height: 26px; overflow: hidden; display: inline-block;
+                            float: left; border-radius: 3px; vertical-align: text-top; width: 53px; background: url(http://static-02.lazada.vn/images/2014/sprites/icon-83573.png) 0px -3467px no-repeat;">
+                            &nbsp;</div>
+                        <div class="footer__item__icon icon icon-payment_smartlink" style="margin: 0px 4px 4px 0px;
+                            padding: 0px; height: 39px; line-height: 26px; overflow: hidden; display: inline-block;
+                            float: left; border-radius: 3px; vertical-align: text-top; width: 53px; background: url(http://static-02.lazada.vn/images/2014/sprites/icon-83573.png) 0px -3959px no-repeat;">
+                            &nbsp;</div>
+                    </div>
+                </div>
+                <div class="footer__top__child footer__misc__partner-verify" style="margin: 0px;
+                    padding: 0px; display: table-cell; zoom: 1; word-spacing: normal; vertical-align: top;
+                    text-rendering: auto; box-sizing: border-box; width: 246px; border-right-width: 0px;
+                    border-left-width: 0px;">
+                    <div class="footer__item" style="margin: 0px; padding: 0px 10px; box-sizing: border-box;
+                        position: relative;">
+                        <div class="footer__item__title" style="margin: 0px 0px 2px; padding: 0px; font-weight: 700;
+                            color: rgb(84, 83, 81); font-size: 1em;">
+                            Được chứng nhận</div>
+                        <div class="footer__item__icon icon icon-footer-verified-pci" style="margin: 3px 0px 4px;
+                            padding: 0px; height: 65px; line-height: 26px; overflow: hidden; text-indent: -999em;
+                            display: inline-block; float: none; border-radius: 3px; vertical-align: text-top;
+                            width: 60px; background-image: url(http://static.lazada.vn/cms/icons/seal_ctv_80_016032014.png) !important;
+                            background-attachment: initial !important; background-color: initial !important;
+                            background-size: 90%; background-origin: initial !important; background-clip: initial !important;
+                            background-position: 0px 0px !important; background-repeat: no-repeat !important;">
+                            &nbsp;</div>
+                        &nbsp;&nbsp;
+                        <div class="footer__item__icon icon icon-footer-hdl" style="margin: 0px 4px 4px 0px;
+                            padding: 0px; height: 32px; line-height: 26px; overflow: hidden; display: inline-block;
+                            float: none; border-radius: 3px; vertical-align: text-top; font-weight: bold;
+                            font-size: 11px; background: none !important;">
+                            Chứng nhận s&agrave;n giao dịch TMĐT</div>
+                    </div>
+                </div>
+                <div class="footer__top__child footer__top__delivery" style="margin: 0px; padding: 0px;
+                    display: table-cell; zoom: 1; word-spacing: normal; vertical-align: top; text-rendering: auto;
+                    box-sizing: border-box; width: 232px; border-right-width: 0px; border-left-width: 1px;
+                    border-left-style: dotted; border-left-color: rgb(183, 183, 183);">
+                    <div class="footer__item" style="margin: 0px; padding: 0px 10px; box-sizing: border-box;
+                        position: relative;">
+                        <div class="footer__top__title" style="margin: 0px 0px 5px; padding: 0px; text-transform: uppercase;
+                            font-weight: 700; color: rgb(84, 83, 81);">
+                            DỊCH VỤ GIAO H&Agrave;NG</div>
+                        <div class="footer__top__item" style="margin: 0px 0px 10px; padding: 0px;">
+                            <div class="shipping" style="margin: 0px; padding: 0px;">
+                                &nbsp;&nbsp;&nbsp;&nbsp;</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     </form>
 </body>

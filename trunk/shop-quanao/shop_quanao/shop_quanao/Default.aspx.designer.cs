@@ -13,6 +13,15 @@ namespace shop_quanao {
     public partial class Default {
         
         /// <summary>
+        /// ucslide control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::shop_quanao.UserControls.slide ucslide;
+        
+        /// <summary>
         /// uclistsanphamhot control.
         /// </summary>
         /// <remarks>
