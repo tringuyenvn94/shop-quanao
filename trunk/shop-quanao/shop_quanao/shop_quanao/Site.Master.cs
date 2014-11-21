@@ -12,7 +12,17 @@ namespace shop_quanao
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["KhachhangID"] == null)
+            {
+                sessnull.Visible = true;
+                sessnotnull.Visible = false;
+            }
+            else
+            {
+                sessnull.Visible = false;
+                sessnotnull.Visible = true;
+                lblhoten.Text = Session["FullName_KH"].ToString();
+            }
             DataTable cart = new DataTable();
             if (Session["cart"] == null)
             {

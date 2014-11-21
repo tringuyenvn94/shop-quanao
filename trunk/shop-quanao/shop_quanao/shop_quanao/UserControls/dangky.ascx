@@ -79,7 +79,8 @@
                                     <td>
                                     </td>
                                     <td colspan="2" style="padding: 4px 0px 5px 3px;">
-                                        <asp:Button ID="btndangky" runat="server" Text="Đăng ký" />
+                                        <asp:Button ID="btndangky" runat="server" Text="Đăng ký" 
+                                            onclick="btndangky_Click" />
                                     </td>
                                 </tr>
                             </tbody>

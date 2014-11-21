@@ -12,7 +12,6 @@ namespace shop_quanao.COMM
         public static SqlConnection cnn;
         public ConnectionDB()
         {
-            //CHINH LAI DUONG DAN PHU HOP VOI CAU HINH SQLSERVER CUA BAN 
             string strcnn = ConfigurationManager.ConnectionStrings["shop_quanao"].ConnectionString;
             cnn = new SqlConnection(strcnn);
         }

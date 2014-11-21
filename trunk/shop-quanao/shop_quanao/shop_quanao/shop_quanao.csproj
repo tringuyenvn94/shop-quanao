@@ -55,6 +55,7 @@
     <Content Include="Account\ChangePasswordSuccess.aspx" />
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Register.aspx" />
+    <Content Include="Admin\baocaos.aspx" />
     <Content Include="Admin\css\Count_Visited.txt" />
     <Content Include="Admin\css\dark\editor.css" />
     <Content Include="Admin\css\dark\images\editor\buttons.png" />
@@ -844,6 +845,8 @@
     <Content Include="Admin\css\light\jquery.wysiwyg.css" />
     <Content Include="Admin\css\light\theme.css" />
     <Content Include="Admin\css\style.css" />
+    <Content Include="Admin\Default.aspx" />
+    <Content Include="Admin\hoadons.aspx" />
     <Content Include="Admin\images\arrow_icon.png" />
     <Content Include="Admin\images\avatar\20120208021609622.jpg" />
     <Content Include="Admin\images\avatar\logo_for_web.png" />
@@ -921,6 +924,33 @@
     <Content Include="Admin\js\wl_Time.js" />
     <Content Include="Admin\js\wl_Valid.js" />
     <Content Include="Admin\js\wl_Widget.js" />
+    <Content Include="Admin\khachhangs.aspx" />
+    <Content Include="Admin\Login.aspx" />
+    <Content Include="Admin\sanphams.aspx" />
+    <Content Include="Admin\Sizes.aspx" />
+    <Content Include="Admin\tintucs.aspx" />
+    <Content Include="Admin\UserControls\chitiet_hoadon.ascx" />
+    <Content Include="Admin\UserControls\ConfirmDialog.ascx" />
+    <Content Include="Admin\UserControls\hoadon_list.ascx" />
+    <Content Include="Admin\UserControls\khachhang_list.ascx" />
+    <Content Include="Admin\UserControls\NotificationDialog.ascx" />
+    <Content Include="Admin\UserControls\PagingController.ascx" />
+    <Content Include="Admin\UserControls\sanpham_add.ascx" />
+    <Content Include="Admin\UserControls\sanpham_list.ascx" />
+    <Content Include="Admin\UserControls\sanpham_update.ascx" />
+    <Content Include="Admin\UserControls\sanpham_update_sl.ascx" />
+    <Content Include="Admin\UserControls\Size_add.ascx" />
+    <Content Include="Admin\UserControls\Size_list.ascx" />
+    <Content Include="Admin\UserControls\Size_update.ascx" />
+    <Content Include="Admin\UserControls\tintuc_add.ascx" />
+    <Content Include="Admin\UserControls\tintuc_list.ascx" />
+    <Content Include="Admin\UserControls\tintuc_update.ascx" />
+    <Content Include="Admin\UserControls\ucbaocao.ascx" />
+    <Content Include="Admin\UserControls\ucbaocao_hoadon.ascx" />
+    <Content Include="Admin\UserControls\user_add.ascx" />
+    <Content Include="Admin\UserControls\user_list.ascx" />
+    <Content Include="Admin\UserControls\user_update.ascx" />
+    <Content Include="Admin\users.aspx" />
     <Content Include="Css\LogIn.css" />
     <Content Include="Css\News.css" />
     <Content Include="Css\nivo-slider.css" />
@@ -1049,8 +1079,231 @@
     <Compile Include="Account\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\baocaos.aspx.cs">
+      <DependentUpon>baocaos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\baocaos.aspx.designer.cs">
+      <DependentUpon>baocaos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\hoadons.aspx.cs">
+      <DependentUpon>hoadons.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\hoadons.aspx.designer.cs">
+      <DependentUpon>hoadons.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\khachhangs.aspx.cs">
+      <DependentUpon>khachhangs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\khachhangs.aspx.designer.cs">
+      <DependentUpon>khachhangs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\sanphams.aspx.cs">
+      <DependentUpon>sanphams.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\sanphams.aspx.designer.cs">
+      <DependentUpon>sanphams.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Sizes.aspx.cs">
+      <DependentUpon>Sizes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Sizes.aspx.designer.cs">
+      <DependentUpon>Sizes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\tintucs.aspx.cs">
+      <DependentUpon>tintucs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\tintucs.aspx.designer.cs">
+      <DependentUpon>tintucs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserControls\chitiet_hoadon.ascx.cs">
+      <DependentUpon>chitiet_hoadon.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UserControls\chitiet_hoadon.ascx.designer.cs">
+      <DependentUpon>chitiet_hoadon.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserControls\ConfirmDialog.ascx.cs">
+      <DependentUpon>ConfirmDialog.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UserControls\ConfirmDialog.ascx.designer.cs">
+      <DependentUpon>ConfirmDialog.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserControls\hoadon_list.ascx.cs">
+      <DependentUpon>hoadon_list.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UserControls\hoadon_list.ascx.designer.cs">
+      <DependentUpon>hoadon_list.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserControls\khachhang_list.ascx.cs">
+      <DependentUpon>khachhang_list.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UserControls\khachhang_list.ascx.designer.cs">
+      <DependentUpon>khachhang_list.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserControls\NotificationDialog.ascx.cs">
+      <DependentUpon>NotificationDialog.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UserControls\NotificationDialog.ascx.designer.cs">
+      <DependentUpon>NotificationDialog.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserControls\PagingController.ascx.cs">
+      <DependentUpon>PagingController.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UserControls\PagingController.ascx.designer.cs">
+      <DependentUpon>PagingController.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserControls\sanpham_add.ascx.cs">
+      <DependentUpon>sanpham_add.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UserControls\sanpham_add.ascx.designer.cs">
+      <DependentUpon>sanpham_add.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserControls\sanpham_list.ascx.cs">
+      <DependentUpon>sanpham_list.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UserControls\sanpham_list.ascx.designer.cs">
+      <DependentUpon>sanpham_list.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserControls\sanpham_update.ascx.cs">
+      <DependentUpon>sanpham_update.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UserControls\sanpham_update.ascx.designer.cs">
+      <DependentUpon>sanpham_update.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserControls\sanpham_update_sl.ascx.cs">
+      <DependentUpon>sanpham_update_sl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UserControls\sanpham_update_sl.ascx.designer.cs">
+      <DependentUpon>sanpham_update_sl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserControls\Size_add.ascx.cs">
+      <DependentUpon>Size_add.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UserControls\Size_add.ascx.designer.cs">
+      <DependentUpon>Size_add.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserControls\Size_list.ascx.cs">
+      <DependentUpon>Size_list.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UserControls\Size_list.ascx.designer.cs">
+      <DependentUpon>Size_list.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserControls\Size_update.ascx.cs">
+      <DependentUpon>Size_update.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UserControls\Size_update.ascx.designer.cs">
+      <DependentUpon>Size_update.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserControls\tintuc_add.ascx.cs">
+      <DependentUpon>tintuc_add.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UserControls\tintuc_add.ascx.designer.cs">
+      <DependentUpon>tintuc_add.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserControls\tintuc_list.ascx.cs">
+      <DependentUpon>tintuc_list.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UserControls\tintuc_list.ascx.designer.cs">
+      <DependentUpon>tintuc_list.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserControls\tintuc_update.ascx.cs">
+      <DependentUpon>tintuc_update.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UserControls\tintuc_update.ascx.designer.cs">
+      <DependentUpon>tintuc_update.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserControls\ucbaocao.ascx.cs">
+      <DependentUpon>ucbaocao.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UserControls\ucbaocao.ascx.designer.cs">
+      <DependentUpon>ucbaocao.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserControls\ucbaocao_hoadon.ascx.cs">
+      <DependentUpon>ucbaocao_hoadon.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UserControls\ucbaocao_hoadon.ascx.designer.cs">
+      <DependentUpon>ucbaocao_hoadon.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserControls\user_add.ascx.cs">
+      <DependentUpon>user_add.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UserControls\user_add.ascx.designer.cs">
+      <DependentUpon>user_add.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserControls\user_list.ascx.cs">
+      <DependentUpon>user_list.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UserControls\user_list.ascx.designer.cs">
+      <DependentUpon>user_list.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserControls\user_update.ascx.cs">
+      <DependentUpon>user_update.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UserControls\user_update.ascx.designer.cs">
+      <DependentUpon>user_update.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\users.aspx.cs">
+      <DependentUpon>users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\users.aspx.designer.cs">
+      <DependentUpon>users.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="COMM\Admins.cs" />
+    <Compile Include="COMM\CBO.cs" />
+    <Compile Include="COMM\Common.cs" />
     <Compile Include="COMM\ConnectionDB.cs" />
+    <Compile Include="COMM\DataNavigatorEventArgs.cs" />
     <Compile Include="COMM\EndUser.cs" />
+    <Compile Include="COMM\Null.cs" />
+    <Compile Include="COMM\SQLExecute.cs" />
     <Compile Include="dangky.aspx.cs">
       <DependentUpon>dangky.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1079,6 +1332,14 @@
     <Compile Include="Details.aspx.designer.cs">
       <DependentUpon>Details.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Entities\BinhLuan.cs" />
+    <Compile Include="Entities\chitiethoadon.cs" />
+    <Compile Include="Entities\hoadon.cs" />
+    <Compile Include="Entities\KhachHang.cs" />
+    <Compile Include="Entities\SanPham.cs" />
+    <Compile Include="Entities\SanPham_Size.cs" />
+    <Compile Include="Entities\Size.cs" />
+    <Compile Include="Entities\tintuc.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -1171,7 +1432,6 @@
   <ItemGroup>
     <Folder Include="Admin\css\dark\images\images\" />
     <Folder Include="Admin\css\light\images\images\" />
-    <Folder Include="Admin\UserControls\" />
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
@@ -1179,6 +1439,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\Site.Master" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

@@ -90,17 +90,17 @@ namespace shop_quanao
                             dtlSanPham.DataBind();
                             break;
                         case "saleoff":
-                            dtlSanPham.DataSource = vcontrol.getall_sp_chude(3);
+                            dtlSanPham.DataSource = vcontrol.getall_sp_chude(2);
                             dtlSanPham.DataBind();
                             //Session["LoaiSP"] = "saleoff";
                             break;
                         case "new":
-                            dtlSanPham.DataSource = vcontrol.getall_sp_chude(2);
+                            dtlSanPham.DataSource = vcontrol.getall_sp_chude(1);
                             dtlSanPham.DataBind();
                             //Session["LoaiSP"] = "new";
                             break;
                         case "hot":
-                            dtlSanPham.DataSource = vcontrol.getall_sp_chude(1);
+                            dtlSanPham.DataSource = vcontrol.getall_sp_chude(0);
                             dtlSanPham.DataBind();
                             //Session["LoaiSP"] = "hot";
                             break;
