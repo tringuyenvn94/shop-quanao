@@ -95,7 +95,7 @@ namespace shop_quanao.UserControls
                 DataTable cart = Session["cart"] as DataTable; ;
                 foreach (DataRow row in cart.Rows)
                 {
-                    vcontrol.ThemCTHD(mahd, row["ID"].ToString(), row["Size"].ToString(), Convert.ToInt32(row["Quantity"]), Convert.ToDouble(row["Price"]));
+                    //vcontrol.ThemCTHD(mahd, row["ID"].ToString(), row["Size"].ToString(), Convert.ToInt32(row["Quantity"]), Convert.ToDouble(row["Price"]));
                 }
                 Session["cart"] = null;
                 Response.Redirect("Default.aspx");

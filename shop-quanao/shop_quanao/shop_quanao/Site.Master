@@ -170,6 +170,38 @@
     <div id="menutop">
         <div class="menu1">
             <div class="left">
+                <asp:Panel ID="sessnull" runat="server" Visible="false">
+                    <a href="Default.aspx" class="easyui-tooltip tooltip-f" title="">
+                        <img src="Img/home.jpg" alt="" style="padding: 0px 5px 5px 0px;">Trang chủ</a>
+                    <a href="dangnhap.aspx" class="easyui-tooltip tooltip-f" title="">
+                        <img src="Img/login.png" alt="" style="padding: 0px 5px 5px 0px;">Đăng nhập</a>&nbsp;&nbsp;
+                    <a href="dangky.aspx" class="easyui-tooltip tooltip-f" title="">
+                        <img src="Img/register.png" alt="" style="padding: 0px 5px 5px 0px;">Đăng ký</a>&nbsp;&nbsp;
+                    <a href="" class="easyui-tooltip tooltip-f" title="">
+                        <img src="Img/fogot.png" alt="" style="padding: 0px 5px 5px 0px;">Quên mật khẩu?</a>
+                </asp:Panel>
+                <asp:Panel ID="sessnotnull" runat="server" Visible="false">
+                    <a href="Default.aspx" class="easyui-tooltip tooltip-f" title="">
+                        <img src="Img/home.jpg" alt="" style="padding: 0px 5px 5px 0px;">Trang chủ</a>
+                    <a href="Default.aspx" class="easyui-tooltip tooltip-f" title="">
+                        <img src="Img/login.png" alt="" style="padding: 0px 5px 5px 0px;"><asp:Label ID="lblhoten"
+                            runat="server" Text=""></asp:Label>
+                    </a>
+                &nbsp;&nbsp;</asp:Panel>
+            </div>
+            <div class="right">
+                <a href="" title="">Tin tứca href="#" title="">Liên hệ</a>|<a href="" title="">
+                    <span class="pimg" style="padding: 0px;">
+                        <img src="Img/hotline.jpg" alt="" style="padding-right: 5px;" title="Hotline: 1234567890">
+                        Hotline: <span id="Menu_lblHotline"><span style="color: rgb(255, 102, 0);">1234567890</span></span></span>
+            </div>
+            <div class="clear">
+            </div>
+        </div>
+    </div>
+    <%-- <div id="menutop">
+        <div class="menu1">
+            <div class="left">
                 <a href="Default.aspx" title="">
                     <img src="Img/home.jpg" alt="" style="padding-right: 5px;">Trang chủ</a> <a href="dangnhap.aspx"
                         title="">
@@ -188,7 +220,7 @@
             <div class="clear">
             </div>
         </div>
-    </div>
+    </div>--%>
     <div class="Banner1">
         <div class="TextUniversity1">
             <a></a>
@@ -419,6 +451,10 @@
                 </div>
             </div>
             <div style="width: 170px; height: auto; color: White;">
+                <asp:Repeater ID="Repeater1" runat="server">
+                    <ItemTemplate>
+                    </ItemTemplate>
+                </asp:Repeater>
                 <div class="TitelLeftBoxCenter2">
                     NGÀY
                 </div>

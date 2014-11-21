@@ -27,7 +27,7 @@
                                         <span class="required">*</span> Mật khẩu:
                                     </td>
                                     <td>
-                                        <asp:TextBox ID="txtmakhau" runat="server" validtype="email" Style="width: 45%;"
+                                        <asp:TextBox ID="txtmakhau" runat="server" TextMode="Password" validtype="email" Style="width: 45%;"
                                             class="trim input easyui-validatebox validatebox-text validatebox-invalid"></asp:TextBox>
                                     </td>
                                 </tr>
@@ -37,7 +37,8 @@
                                     <td>
                                     </td>
                                     <td colspan="2" style="padding: 4px 0px 5px 3px;">
-                                        <asp:Button ID="btndangnhap" runat="server" Text="Đăng nhập" />
+                                        <asp:Button ID="btndangnhap" runat="server" Text="Đăng nhập" 
+                                            onclick="btndangnhap_Click" />
                                     </td>
                                 </tr>
                             </tbody>
